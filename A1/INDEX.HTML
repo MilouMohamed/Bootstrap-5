@@ -1,0 +1,979 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- j1  v 1-4 -->
+<!-- j2  v 4-8 -->
+<!-- j2  v 8-12 -->
+<!-- j2  v 12-13 -->
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-success 
+      bg-warning fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar v 11 </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <img src="./images/img-8h.jpg" alt="img " class="w-100" />
+
+
+    <div class="container-fluid">
+        <h2 class="text text-center text-primary m-3">Formulaire Bootstrap </h2>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="./images/img-6.jpg" alt="Image">
+            </div>
+            <div class="col-md-7   position-relative">
+                <form action="#" method="get" class="position-absolute top-50 start-50 translate-middle">
+                    <div class="row mb-3  form-group">
+                        <label for="name">Name :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="row mb-3 form-group">
+                        <label for="name2">Name 22 :</label>
+                        <input type="text" name="name2" class="form-control">
+                    </div>
+                    <div class="row mb-3 form-group">
+                        <label for="email">Email :</label>
+                        <input type="text" name="email" class="form-control">
+                    </div>
+                    <div class="row mb-3 form-group">
+                        <label for="adres">Adresse :</label>
+                        <input type="text" name="adres" class="form-control">
+                    </div>
+                    <div class="row mt-5 form-group">
+                        <input type="submit" name="adres" class="form-control btn btn-success">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <hr>
+
+    <div class="container f">
+        <h2>Formulaire</h2>
+        <div class="my-form-img">
+            <div class="img">
+                <img src="./images/img-4.jpg" alt="image" />
+            </div>
+            <div class="from">
+                <form action="#">
+                    <div class="row-f">
+                        <label for="name">Name :</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="row-f">
+                        <label for="name2">Name 2 :</label>
+                        <input type="text" name="name2">
+                    </div>
+                    <div class="row-f">
+                        <label for="email">Email :</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="row-f">
+                        <label for="adress">Adress :</label>
+                        <input type="text" name="adress">
+                    </div>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+    <style>
+        * {
+            max-width: 100%;
+        }
+
+        .f>h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .my-form-img {
+            display: flex;
+            margin-top: 20px;
+            width: 100vw;
+        }
+
+        .my-form-img .img,
+        .my-form-img .from {
+            width: 50%;
+        }
+
+        @media (max-width: 765px) {
+
+            .my-form-img {
+                flex-direction: column;
+            }
+
+            .my-form-img .img,
+            .my-form-img .from {
+
+                width: 100%;
+            }
+
+            .my-form-img .from form {
+                padding: 30px 10px;
+            }
+        }
+
+        .my-form-img .from {
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: radial-gradient(black, rgba(0, 0, 0, .5));
+        }
+
+        .my-form-img .from form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .my-form-img .from .row-f {
+            display: flex;
+        }
+
+        .my-form-img .from .row-f label {
+            width: 180px;
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .my-form-img .from .row-f input {
+            width: 100%;
+        }
+
+        .my-form-img .from input[type="submit"] {
+            width: 100%;
+        }
+    </style>
+
+
+
+
+
+
+
+    <img src="./images/profile.jpg" alt="img rounde" class="image  rounded-circle w-25  m-5">
+    <hr><br>
+
+
+    <div class="container  justify-align-center">
+        <h4>Tables v9</h4>
+        <table class="table table-primary table-hover table-bordered  ">
+            <thead class="table-light">
+                <tr>
+                    <th>One</th>
+                    <th>Two</th>
+                    <th>Three</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td scope="row"> 1 a</td>
+                    <td> 2 b</td>
+                    <td> 3 c</td>
+                </tr>
+                <tr>
+                    <td scope="row"> 1 b</td>
+                    <td>2 b</td>
+                    <td>3 b</td>
+                </tr>
+                <tr></tr>
+                <td scope="row"> 1 a</td>
+                <td> 2 b</td>
+                <td> 3 c</td>
+                </tr>
+                <tr>
+                    <td scope="row"> 1 b</td>
+                    <td>2 b</td>
+                    <td>3 b</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <hr><br>
+    <div class="container  justify-align-center">
+        <h4>LISTE v8</h4>
+        <ul class="list-group text-center w-100">
+            <li class="list-group-item ">HTML</li>
+            <li class="list-group-item active">JavaScript</li>
+            <li class="list-group-item disabled">JavaScript</li>
+            <li class="list-group-item">MySql</li>
+        </ul>
+    </div>
+    <hr><br>
+
+    <div class="container">
+        <h4>Card v7</h4>
+        <div class="card-group  gap-4">
+
+            <div class="card" style="width: 18rem;">
+                <img src="./images/img-3.jpg" class="card-img-top " height="300px" width="100%" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text text-primary mb-2 fs-5">
+                        12000 DH
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./images/img-4.jpg" class="card-img-top  " height="300px" width="100%" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text text-primary mb-2 fs-5">
+                        12000 DH
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./images/img-5.jpg" class="card-img-top " height="300px" width="100%" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 3</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text text-primary mb-2 fs-5">
+                        12000 DH
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr><br>
+    <div class="container">
+        <h4>Alert v6</h4>
+
+        <div class="alert alert-secondary" role="alert">
+            A simple secondary alert—check it out!
+        </div>
+
+        <div class="alert alert-success">
+            Mon error ici J ai oblier de metter un style
+        </div>
+        <div class="alert alert-warning">
+            Mon error ici J ai oblier de metter un style
+        </div>
+        <div class="alert alert-primary">
+            Mon error ici J ai oblier de metter un style
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="container bg-warning "><span class="badge text-bg-primary">Primary</span>
+        <span class="badge text-bg-secondary">Secondary</span>
+        <span class="badge text-bg-success">Success</span>
+
+        <h1 class="text text-center ">J aime</h1>
+        <h1 class="text text-uppercase">Commentaire</h1>
+        <h1 class="text text-primary">Partege</h1>
+        <h1 class="text text-danger">Abounne</h1>
+        <h1 class="text text-success">Voter</h1>
+    </div>
+
+
+    <div class="row">
+        <p class="col-md-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, amet tempore. Velit
+            voluptate sequi sunt, sed
+            ducimus, eos nemo voluptates odit recusandae fuga hic quos blanditiis dolores omnis mollitia rem!</p>
+
+        <p class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, amet tempore. Velit
+            voluptate sequi sunt, sed
+            ducimus, eos nemo voluptates odit recusandae fuga hic quos blanditiis dolores omnis mollitia rem!</p>
+    </div>
+
+    <hr>
+    <br>
+    <hr>
+
+
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aperiam! Corrupti voluptatem iure saepe minus,
+        dolore, eius deserunt rerum tenetur quibusdam fuga velit, quas quidem odit aperiam incidunt veniam! Deserunt.
+    </div>
+    <div class="container-fluid mt-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aperiam! Corrupti voluptatem iure saepe minus,
+        dolore, eius deserunt rerum tenetur quibusdam fuga velit, quas quidem odit aperiam incidunt veniam! Deserunt.
+    </div>
+
+    <div class="d-flex">
+        <a href="https://www.youtube.com/watch?v=LSaqQ3o6hfY&list=PLNZOdJU1xpb1jI2UlMpe-I-ZEWCwIOpfu&index=4">Youtube
+        </a>
+    </div>
+
+
+    <div class="container">
+        <h4>Buttons v5</h4>
+        <button class="btn btn-primary">Ajouter</button>
+        <button class="btn btn-danger">Supprimer</button>
+        <button class="btn btn-success">Edite</button>
+        <button class="btn btn-warning btn-center ">Edite 2</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+
+        <button type="button" class="btn btn-outline-success">Success</button>
+
+
+        <div class="d-grid gap-2 d-md-block m-2">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
+
+
+        <div class="btn-group m-3" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+        </div>
+
+
+
+        <h4>slider</h4>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner mb-5">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./images/img-2.jpg" class="d-block w-100" height="400px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/img-2.jpg" class="d-block w-100" height="400px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img-1.jpg" class="d-block w-100" height="400px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- j1  v 1-4 -->
+<!-- j2  v 4-8 -->
+<!-- j2  v 8-12 -->
+<!-- j2  v 12-13 -->
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-success 
+      bg-warning fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar v 11 </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <img src="./images/img-8h.jpg" alt="img " class="w-100" />
+
+    <div class="container mt-4">
+
+        <div class="row">
+            <div class="col-md-6 ">
+                <h2 class="text text-center text-uppercase line-hover">text One hover</h2>
+                <p class="text text-bg-secondary p-2 ">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo enim quia alias excepturi, numquam
+                    totam vero veniam aspernatur officiis beatae velit iure minima sint saepe debitis! Molestias dolorem
+                    repudiandae libero.
+                </p>
+            </div>
+            <div class="col-md-6 ">
+                <h2 class="text text-center text-uppercase   hover-line-bordre">text Two</h2>
+                <p class="text text-bg-secondary p-2   ">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo enim quia alias excepturi, numquam
+                    totam vero veniam aspernatur officiis beatae velit iure minima sint saepe debitis! Molestias dolorem
+                    repudiandae libero.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h2 class="text text-center text-primary m-3">Formulaire Bootstrap </h2>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="./images/img-6.jpg" alt="Image">
+            </div>
+            <div class="col-md-7   position-relative">
+                <form action="#" method="get" class="position-absolute top-50 start-50 translate-middle">
+                    <div class="row mb-3  form-group">
+                        <label for="name">Name :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="row mb-3 form-group">
+                        <label for="name2">Name 22 :</label>
+                        <input type="text" name="name2" class="form-control">
+                    </div>
+                    <div class="row mb-3 form-group">
+                        <label for="email">Email :</label>
+                        <input type="text" name="email" class="form-control">
+                    </div>
+                    <div class="row mb-3 form-group">
+                        <label for="adres">Adresse :</label>
+                        <input type="text" name="adres" class="form-control">
+                    </div>
+                    <div class="row mt-5 form-group">
+                        <input type="submit" name="adres" class="form-control btn btn-success">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <hr>
+
+    <div class="container f">
+        <h2>Formulaire</h2>
+        <div class="my-form-img">
+            <div class="img">
+                <img src="./images/img-4.jpg" alt="image" />
+            </div>
+            <div class="from">
+                <form action="#">
+                    <div class="row-f">
+                        <label for="name">Name :</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="row-f">
+                        <label for="name2">Name 2 :</label>
+                        <input type="text" name="name2">
+                    </div>
+                    <div class="row-f">
+                        <label for="email">Email :</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="row-f">
+                        <label for="adress">Adress :</label>
+                        <input type="text" name="adress">
+                    </div>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+    <style>
+        * {
+            max-width: 100%;
+        }
+
+        .f>h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .my-form-img {
+            display: flex;
+            margin-top: 20px;
+            width: 100vw;
+        }
+
+        .my-form-img .img,
+        .my-form-img .from {
+            width: 50%;
+        }
+
+        @media (max-width: 765px) {
+
+            .my-form-img {
+                flex-direction: column;
+            }
+
+            .my-form-img .img,
+            .my-form-img .from {
+
+                width: 100%;
+            }
+
+            .my-form-img .from form {
+                padding: 30px 10px;
+            }
+        }
+
+        .my-form-img .from {
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: radial-gradient(black, rgba(0, 0, 0, .5));
+        }
+
+        .my-form-img .from form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .my-form-img .from .row-f {
+            display: flex;
+        }
+
+        .my-form-img .from .row-f label {
+            width: 180px;
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .my-form-img .from .row-f input {
+            width: 100%;
+        }
+
+        .my-form-img .from input[type="submit"] {
+            width: 100%;
+        }
+
+        .line-hover {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .line-hover::before {
+            background-color: rgb(255, 0, 0);
+
+        }
+
+        .line-hover:hover::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: rgb(0, 0, 255);
+            cursor: pointer;
+            bottom: 0%;
+            left: 0%;
+            
+            transition: 1s !important;
+        }
+        .hover-line-bordre:hover {
+            border-left: 4px solid red;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+    </style>
+
+
+
+
+
+
+
+    <img src="./images/profile.jpg" alt="img rounde" class="image  rounded-circle w-25  m-5">
+    <hr><br>
+
+
+    <div class="container  justify-align-center">
+        <h4>Tables v9</h4>
+        <table class="table table-primary table-hover table-bordered  ">
+            <thead class="table-light">
+                <tr>
+                    <th>One</th>
+                    <th>Two</th>
+                    <th>Three</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td scope="row"> 1 a</td>
+                    <td> 2 b</td>
+                    <td> 3 c</td>
+                </tr>
+                <tr>
+                    <td scope="row"> 1 b</td>
+                    <td>2 b</td>
+                    <td>3 b</td>
+                </tr>
+                <tr></tr>
+                <td scope="row"> 1 a</td>
+                <td> 2 b</td>
+                <td> 3 c</td>
+                </tr>
+                <tr>
+                    <td scope="row"> 1 b</td>
+                    <td>2 b</td>
+                    <td>3 b</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <hr><br>
+    <div class="container  justify-align-center">
+        <h4>LISTE v8</h4>
+        <ul class="list-group text-center w-100">
+            <li class="list-group-item ">HTML</li>
+            <li class="list-group-item active">JavaScript</li>
+            <li class="list-group-item disabled">JavaScript</li>
+            <li class="list-group-item">MySql</li>
+        </ul>
+    </div>
+    <hr><br>
+
+    <div class="container">
+        <h4>Card v7</h4>
+        <div class="card-group  gap-4">
+
+            <div class="card" style="width: 18rem;">
+                <img src="./images/img-3.jpg" class="card-img-top " height="300px" width="100%" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text text-primary mb-2 fs-5">
+                        12000 DH
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./images/img-4.jpg" class="card-img-top  " height="300px" width="100%" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text text-primary mb-2 fs-5">
+                        12000 DH
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./images/img-5.jpg" class="card-img-top " height="300px" width="100%" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 3</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text text-primary mb-2 fs-5">
+                        12000 DH
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr><br>
+    <div class="container">
+        <h4>Alert v6</h4>
+
+        <div class="alert alert-secondary" role="alert">
+            A simple secondary alert—check it out!
+        </div>
+
+        <div class="alert alert-success">
+            Mon error ici J ai oblier de metter un style
+        </div>
+        <div class="alert alert-warning">
+            Mon error ici J ai oblier de metter un style
+        </div>
+        <div class="alert alert-primary">
+            Mon error ici J ai oblier de metter un style
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="container bg-warning "><span class="badge text-bg-primary">Primary</span>
+        <span class="badge text-bg-secondary">Secondary</span>
+        <span class="badge text-bg-success">Success</span>
+
+        <h1 class="text text-center ">J aime</h1>
+        <h1 class="text text-uppercase">Commentaire</h1>
+        <h1 class="text text-primary">Partege</h1>
+        <h1 class="text text-danger">Abounne</h1>
+        <h1 class="text text-success">Voter</h1>
+    </div>
+
+
+    <div class="row">
+        <p class="col-md-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, amet tempore. Velit
+            voluptate sequi sunt, sed
+            ducimus, eos nemo voluptates odit recusandae fuga hic quos blanditiis dolores omnis mollitia rem!</p>
+
+        <p class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, amet tempore. Velit
+            voluptate sequi sunt, sed
+            ducimus, eos nemo voluptates odit recusandae fuga hic quos blanditiis dolores omnis mollitia rem!</p>
+    </div>
+
+    <hr>
+    <br>
+    <hr>
+
+
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aperiam! Corrupti voluptatem iure saepe minus,
+        dolore, eius deserunt rerum tenetur quibusdam fuga velit, quas quidem odit aperiam incidunt veniam! Deserunt.
+    </div>
+    <div class="container-fluid mt-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aperiam! Corrupti voluptatem iure saepe minus,
+        dolore, eius deserunt rerum tenetur quibusdam fuga velit, quas quidem odit aperiam incidunt veniam! Deserunt.
+    </div>
+
+    <div class="d-flex">
+        <a href="https://www.youtube.com/watch?v=LSaqQ3o6hfY&list=PLNZOdJU1xpb1jI2UlMpe-I-ZEWCwIOpfu&index=4">Youtube
+        </a>
+    </div>
+
+
+    <div class="container">
+        <h4>Buttons v5</h4>
+        <button class="btn btn-primary">Ajouter</button>
+        <button class="btn btn-danger">Supprimer</button>
+        <button class="btn btn-success">Edite</button>
+        <button class="btn btn-warning btn-center ">Edite 2</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+
+        <button type="button" class="btn btn-outline-success">Success</button>
+
+
+        <div class="d-grid gap-2 d-md-block m-2">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
+
+
+        <div class="btn-group m-3" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+        </div>
+
+
+
+        <h4>slider</h4>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner mb-5">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./images/img-2.jpg" class="d-block w-100" height="400px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/img-2.jpg" class="d-block w-100" height="400px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img-1.jpg" class="d-block w-100" height="400px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+>>>>>>> df6bda0 (fin formation al)
+</html>
