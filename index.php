@@ -1,7 +1,7 @@
 <?php
  
 
- header('Location: A2  zws/'); 
+ header('Location:A2 zws/index.html'); 
  exit; 
 
 
