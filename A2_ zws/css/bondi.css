@@ -279,12 +279,18 @@ body {
 .team .box {
   background-color: var(--color-dark);
 }
-
+ 
 .team .box img {
-  filter: blur(1px);
+  transition: all 1s ease; 
 }
-.team .box img:hover {
+
+.team .box img:hover { 
   filter: contrast(1.5);
 }
 
 /* End Team   */
+/* Strat Tech   */
+.tech { 
+background-color: rgba(0, 0, 0, 0.52);
+}
+/* End Tech   */
