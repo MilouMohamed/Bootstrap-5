@@ -294,3 +294,30 @@ body {
 background-color: rgba(0, 0, 0, 0.52);
 }
 /* End Tech   */
+/* Strat Subscip   */
+.subscrib {
+  background-color: var(--color-blue-fiable);
+  }
+  .subscrib  input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-dark);
+  } 
+.subscrib  input[type="text"]:hover,  
+  .subscrib  input[type="text"]:focus  { 
+    outline: none;
+    border-bottom-color: var(--color-hover);
+}
+.subscrib  input[type="text"]::placeholder { 
+  color: var(--color-hover);
+}
+@media (max-width:576px) { 
+.subscrib  button[type="submit"]   {  
+  margin-top: 15px !important; 
+}
+ 
+}
+
+/* End Subscip   */
+
+/* MILOU MED */
