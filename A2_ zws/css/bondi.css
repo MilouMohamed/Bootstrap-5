@@ -13,7 +13,7 @@ body {
   /* font-weight: <weight>; */
   font-style: normal;
   font-size: 17px;
-  height: 50000px;
+/*  height: 50000px; */
 }
 
 .main-btn {
@@ -49,7 +49,7 @@ body {
       var(--color-blue) 25%,
       transparent 25%
     ),
-    linear-gradient(-270deg, var(--color-hover-2) 25%, transparent 25%);
+    linear-gradient(-270deg, var(-2) 25%, transparent 25%);
   background-size: 30px 80px;
 }
 
@@ -67,7 +67,7 @@ body {
   .nav-link:focus {
     /* color:var(    --color-bluer) !important; */
     text-shadow: var(--color-white) 0px 0px 1px;
-    border-bottom: 2px solid var(--color-hover) !important;
+    border-bottom: 2px solid var() !important;
   }
 }
 .my_nav .logo img {
