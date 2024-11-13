@@ -13,7 +13,7 @@ body {
   /* font-weight: <weight>; */
   font-style: normal;
   font-size: 17px;
-/*  height: 50000px; */
+  /* height: 50000px; */
 }
 
 .main-btn {
@@ -49,7 +49,7 @@ body {
       var(--color-blue) 25%,
       transparent 25%
     ),
-    linear-gradient(-270deg, var(-2) 25%, transparent 25%);
+    linear-gradient(-270deg, var(--color-hover-2) 25%, transparent 25%);
   background-size: 30px 80px;
 }
 
@@ -67,7 +67,7 @@ body {
   .nav-link:focus {
     /* color:var(    --color-bluer) !important; */
     text-shadow: var(--color-white) 0px 0px 1px;
-    border-bottom: 2px solid var() !important;
+    border-bottom: 2px solid var(--color-hover) !important;
   }
 }
 .my_nav .logo img {
@@ -319,5 +319,42 @@ background-color: rgba(0, 0, 0, 0.52);
 }
 
 /* End Subscip   */
+/* Start Footer   */
+.footer   {
+  background-color: var(--color-blue);
+}
+.footer .copyright > span:first-child {
+  color: var(--color-blue-fiable);
+  color: red;
+}
+.footer .copyright    span {
+  color: var(--color-white);
+}
+
+
+.footer .reseau svg{
+  font-size: 25px;
+  margin-right: 10px; 
+  padding: 8px;
+  border-radius: 50%;
+  color: var(--color-white);
+} 
+.footer .instagram {
+  background-color:#fd1d1d   ; 
+}
+.footer .facebook {
+  background-color: #1877f2;  
+}
+.footer .twitter {
+  background-color: #1da1f2 ;  
+}
+.footer .pinterest {
+  background-color: #e60023 ;   
+}
+.footer .tiktok {
+  background-color: #000 ;  
+} 
+ 
+/* End Footer   */
 
 /* MILOU MED */
